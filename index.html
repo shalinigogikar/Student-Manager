@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .counter {
+      margin-top: -20px;
+      margin-bottom:10px ;
+      font-size: 15px;
+      font-weight:lighter ;
+    }
+      .center-text {
+          text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <div class="center-text">
+    <h1>Student Manager</h1>
+    <div class="counter">All Students: <span id="studentCount">0</span></div>
+  </div>
+    <form id="studentForm">
+      <div class="vstack">
+        <label id="name">Name:</label>
+    <input type="text" id="name"  required /><br>
+    <label id="phone">Phone Number:</label>
+    <input type="tel" id="phone" required /><br>
+    <label id="address">Address:</label>
+    <input type="text" id="address" required />
+    <button type="submit">Add</button>
+  </div>
+  </form>
+  <h2>All The Students:</h2>
+  <ul id="studentList"></ul>
+  <script src="index.js"></script>
+</body>
+</html>
